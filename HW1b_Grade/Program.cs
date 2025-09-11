@@ -17,34 +17,45 @@ namespace HW1b_Grade
         {
             // DECLARE: mathematical variables 
             double FinalGrade;
+            double HomeworkGrade;   
+            double ParticipationGrade;  
+            double QuizGrade;   
+            double MidtermGrade;    
+            double FinalExamGrade;
+            string FirstName;
+            string LastName;
+            string StudentID;   
 
             // WRITE: input statements
             Console.WriteLine("What is your first name?");
-            Console.ReadLine();
+            FirstName = Console.ReadLine();
 
             Console.WriteLine("What is your last name?");
-            Console.ReadLine();
+            LastName = Console.ReadLine();
 
             Console.WriteLine("What is your student ID?");
-            Console.ReadLine();
+            StudentID = Console.ReadLine();
 
             Console.WriteLine("What is your overall percentage grade for homeworks?");
-            Console.ReadLine();
+            HomeworkGrade = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("What is your overall percentage grade for participations?");
-            Console.ReadLine();
+            ParticipationGrade = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("What is your overall percentage grade for quizzes?");
-            Console.ReadLine();
+            QuizGrade = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("What is your overall percentage grade for the midterm?");
-            Console.ReadLine();
+            MidtermGrade = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("What is your overall percentage grade for the final?");
-            Console.ReadLine();
+            FinalExamGrade = Convert.ToDouble(Console.ReadLine());
 
             // CALCULATE: final grade
-            FinalGrade = 
+            FinalGrade = ((HomeworkGrade * 0.20) + (ParticipationGrade * 0.20) + (QuizGrade * 0.15) + (MidtermGrade * 0.2) + (FinalExamGrade * 0.25))/100;
+
+            // PRINT: final output statement
+            Console.WriteLine(FirstName + LastName + " (" + StudentID + "), your final grade is " + FinalGrade.ToString("P2") +".");
         }
     }
 }
