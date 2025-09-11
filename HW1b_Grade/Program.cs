@@ -15,13 +15,14 @@ namespace HW1b_Grade
     {
         static void Main(string[] args)
         {
-            // DECLARE: mathematical variables 
+            // DECLARE: variables 
             double FinalGrade;
             double HomeworkGrade;   
             double ParticipationGrade;  
             double QuizGrade;   
             double MidtermGrade;    
             double FinalExamGrade;
+
             string FirstName;
             string LastName;
             string StudentID;   
