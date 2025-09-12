@@ -56,7 +56,7 @@ namespace HW1b_Grade
             FinalGrade = ((HomeworkGrade * 0.20) + (ParticipationGrade * 0.20) + (QuizGrade * 0.15) + (MidtermGrade * 0.2) + (FinalExamGrade * 0.25))/100;
 
             // PRINT: final output statement
-            Console.WriteLine(FirstName + LastName + " (" + StudentID + "), your final grade is " + FinalGrade.ToString("P2") +".");
+            Console.WriteLine(FirstName + " " + LastName + " (" + StudentID + "), your final grade is " + FinalGrade.ToString("P2") +".");
         }
     }
 }
